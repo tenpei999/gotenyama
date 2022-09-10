@@ -1,0 +1,22 @@
+.c-gradation {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: 300;
+  background: linear-gradient(45deg,rgba(0, 0, 0, 1),rgba(53, 45, 245, 0.70),rgba(241, 24, 24, 0.5),rgba(241, 234, 24, 0.30),rgba(255, 255, 255, 0.20));
+  background-size:  300% 300%;
+  animation: bggradient 20s ease infinite;
+}
+
+@keyframes bggradient{
+	0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+	}
+	100% {
+		background-position: 0%;
+	}
+}
