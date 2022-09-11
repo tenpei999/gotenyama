@@ -8,24 +8,99 @@ justify-content: center;
 align-items: center;
 z-index: 100;
 overflow: hidden;
-li{
+li:first-of-type {
   position: absolute;
   list-style: none;
-  width: 50px;
-  height: 100px;
-  background: #ffdbed;
+  width: 2.5%;
+  height: 7.5%;
+  background: #ff0000;
   border-radius: 9999px;
+  z-index: 100;
+  box-shadow: inset 0 10px 25px 0 rgba(0, 0, 0, .5);
   }
-  &__inner {
-    position: absolute;
-    width: 20px;
-    height: 120px;
-    background: #ffdbed;
-    padding-inline-start: unset;
-    margin-left: 20px;
-    li {
-      font-size: 0;
-      width: 0;
+li:nth-of-type(2) {
+  position: absolute;
+  width: 1.2%;
+  height: 9%;
+  background: #000;
+  padding-inline-start: unset;
+  margin-top: -0.5%;
+  z-index: 90;
+  }
+li:nth-of-type(3) {
+  position: absolute;
+  width: 8%;
+  height: 12%;
+  padding-inline-start: unset;
+  margin-top: -0.5%;
+  z-index: 310;
+  background: radial-gradient( #000 0%, #FFF 0%, #f0d60f75 80%, #f4c55f 20% 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 5px #f4c55f, 0 0 8px 5px #f4c55f inset;
+  opacity: 0.5;
+  transform: translate(-15%, -15%);
+  animation: light 25s  infinite;
+  }
+&__first {
+  li:first-of-type {
+    top: 80%; //提灯の垂直位置
+    left: 35%; //提灯の垂平位置
+  }
+  li:nth-of-type(2) {
+    top: 80%; //重化の垂直位置
+    left: 35.55%; //重化の垂平位置
+    }
+  li:nth-of-type(3) {
+    top: 76%; //灯明の垂直位置
+    left: 32%; //灯明の垂平位置
     }
   }
+&__second {
+  li:first-of-type {
+    top: 58%; //提灯の垂直位置
+    left: 54%; //提灯の垂平位置
+    }
+  li:nth-of-type(2) {
+    top: 58%; //重化の垂直位置
+    left: 54.7%; //重化の垂平位置
+    }
+  li:nth-of-type(3) {
+    top: 55%; //灯明の垂直位置
+    left: 51.5%; //灯明の垂平位置
+    }
+  }
+&__third {
+  li:first-of-type {
+    top: 85%; //提灯の垂直位置
+    left: 85%; //提灯の垂平位置
+    }
+  li:nth-of-type(2) {
+    top: 85%; //重化の垂直位置
+    left: 85.7%; //重化の垂平位置
+    }
+  li:nth-of-type(3) {
+    top: 84%; //灯明の垂直位置
+    left: 82.7%; //灯明の垂平位置
+    }
+  }
+}
+
+@keyframes light {
+  0% {
+    transform: scale(2);
+	}
+  10% {
+    transform: scale(2);
+	}
+	30% {
+    transform: scale(0);
+    opacity: 0;
+	}
+	70% {
+    transform: scale(1);
+    opacity: 0;
+	}
+	100% {
+    transform: scale(2);
+	}
 }
