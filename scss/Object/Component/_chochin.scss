@@ -1,0 +1,31 @@
+.c-chochin {
+padding: 0;
+margin: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 100;
+overflow: hidden;
+li{
+  position: absolute;
+  list-style: none;
+  width: 50px;
+  height: 100px;
+  background: #ffdbed;
+  border-radius: 9999px;
+  }
+  &__inner {
+    position: absolute;
+    width: 20px;
+    height: 120px;
+    background: #ffdbed;
+    padding-inline-start: unset;
+    margin-left: 20px;
+    li {
+      font-size: 0;
+      width: 0;
+    }
+  }
+}

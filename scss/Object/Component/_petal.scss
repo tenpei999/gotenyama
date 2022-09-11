@@ -1,11 +1,4 @@
-
-.c-animation-image {
-  position: relative;
-  width: 100vw;
-  animation: fall 4s linear infinite, sway 2s ease-in-out infinite alternate;
-}
-
-.petal {
+.c-petal {
   padding: 0;
   margin: 0;
   width: 100%;
