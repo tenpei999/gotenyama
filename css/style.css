@@ -6,6 +6,7 @@ html {
 body {
   margin: auto;
   width: 100vw;
+  height: 100vh;
 }
 
 a {
@@ -549,6 +550,7 @@ input, button, textarea, select {
   width: 100vw;
   -webkit-animation: fall 4s linear infinite, sway 2s ease-in-out infinite alternate;
           animation: fall 4s linear infinite, sway 2s ease-in-out infinite alternate;
+  overflow: hidden;
 }
 
 .petal {
