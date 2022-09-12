@@ -1,0 +1,13 @@
+.c-sun-light {
+  top: 20px;
+  left: 120px;
+  position: absolute;
+}
+.c-sun-light li {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 115px 1px 0;
+  border-color: #f00 transparent transparent;
+}
