@@ -1,11 +1,13 @@
 .c-sun-light li 
-  width 0
+  width 0 
   height 0
   position absolute
   border-style solid
+  //1度を形成する角錐のサイズ 上115px 横1px 下0
   border-width 115px 1px 0
   //border-color #f00 transparent transparent 
-  border-image linear-gradient(to bottom, black, white) 100% / 115px 1px 0 
+  //グラデーション
+  border-image linear-gradient(to bottom, black, white) 50% / 115px 1px 0 
   transform-origin 50% 100%
   for i in (1..360)
     &:nth-of-type({i})
