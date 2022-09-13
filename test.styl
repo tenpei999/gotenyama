@@ -3,12 +3,12 @@
   height 0
   position absolute
   border-style solid
-  //1度を形成する角錐のサイズ 上115px 横1px 下0
-  border-width 90vw 5.5vh 0
+  //1度を形成する角錐のサイズ 上105vw 横10vh 下0
+  border-width 200vw 10vh 0
   //border-color #f00 transparent transparent 
-  transform-origin 50% 100%
-  for i in (1..1080)
+  for i in (1..150)
     &:nth-of-type({i})
-      transform rotate(i deg) translate3d(0, 0, 0)
+      transform rotate(i * 1.15 deg) translate3d(0, 0, 0)
       //グラデーション
-      border-image linear-gradient(to bottom, hsla(i, 100%, 50%, 1),hsla(i, 100%, 50%, .2),hsla(i, 100%, 50%, 0) ) 100% / 55vw 5.5vh 0
+      border-image linear-gradient(to bottom, hsla(i - 100, 100%, 50%, 1),hsla(i - 100, 100%, 50%, .5),hsla(i - 100, 100%, 50%, .1),hsla(i - 100, 100%, 50%, 0)) 100% / 80vw 5.5vh 0
+    
