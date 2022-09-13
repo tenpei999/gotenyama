@@ -419,6 +419,7 @@ input, button, textarea, select {
   position: absolute;
   transform-origin: center;
   rotate: 301deg;
+  opacity: 1;
 }
 
 .c-chochin {
