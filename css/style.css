@@ -1128,6 +1128,51 @@ input, button, textarea, select {
     opacity: 1;
   }
 }
+.c-akahuji {
+  position: absolute;
+  top: 42.5%;
+  left: 44.5%;
+  width: 7.3vw;
+  opacity: 0;
+  -webkit-animation: aka 75s infinite;
+          animation: aka 75s infinite;
+}
+
+@-webkit-keyframes aka {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  57% {
+    opacity: 0;
+  }
+}
+
+@keyframes aka {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  57% {
+    opacity: 0;
+  }
+}
 .p-animation-image {
   position: relative;
   width: 100vw;

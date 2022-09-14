@@ -1,0 +1,26 @@
+.c-akahuji {
+  position: absolute;
+  top: 42.5%;
+  left: 44.5%;
+  width: 7.3vw;
+  opacity: 0;
+  animation: aka 75s  infinite;
+}
+
+@keyframes aka {
+  0% {
+    opacity: 0;
+	}
+	50% {
+    opacity: 0;
+	}
+	53% {
+    opacity: 0;
+	}
+	55% {
+    opacity: 1;
+	}
+	57% {
+    opacity: 0;
+	}
+}
