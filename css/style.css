@@ -421,14 +421,14 @@ input, button, textarea, select {
           animation: sea-glow 40s linear infinite;
 }
 
-.c-sun-light {
+.c-sea-of-night {
   top: 40%;
   left: -45%;
   position: absolute;
   transform-origin: center;
   rotate: 301deg;
 }
-.c-sun-light li {
+.c-sea-of-night li {
   opacity: 0;
 }
 

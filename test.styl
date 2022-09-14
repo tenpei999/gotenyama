@@ -1,4 +1,4 @@
-.c-sun-light li 
+.c-sea-of-night li 
   width 0 
   height 0
   position absolute
@@ -6,12 +6,12 @@
   //1度を形成する角錐のサイズ 上105vw 横10vh 下0
   border-width 200vw 10vh 0
   //border-color #f00 transparent transparent 
-  for i in (1..25)
+  for i in (1..17)
     &:nth-of-type({i})
       transform rotate(i * 1.15 deg) translate3d(0, 0, 0)
       //グラデーション
-      border-image linear-gradient(to bottom, hsla(i - 100, 100%, 50%, 0),hsla(i - 100, 100%, 50%, .3),hsla(i - 100, 100%, 50%, .2),hsla(i - 100, 100%, 50%, 0)) 100% / 80vw 5.5vh 0 
-      animation sun-beam 25s i s  infinite 
+      border-image linear-gradient(to bottom, hsla(i - 100, 100%, 50%, .0),hsla(i - 100, 100%, 50%, .05),hsla(i - 100, 100%, 50%, .15),hsla(i - 100, 100%, 50%, .1)) 100% / 80vw 5.5vh 0 
+      animation sun-beam 25s  i * 0.2s infinite 
  
  
 
@@ -22,8 +22,8 @@
 	86% {
     opacity: 1;
 	}
-	98% {
-    opacity: 0.5;
+	88% {
+    opacity: 0;
 	}
 	90% {
     opacity: 0;
