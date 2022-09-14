@@ -413,13 +413,23 @@ input, button, textarea, select {
     background-position: 0%;
   }
 }
+.c-sea-glow {
+  height: 300px;
+  position: absolute;
+  background-image: repeating-linear-gradient(45deg, rgb(129, 189, 229) 0px 11px, transparent 13px, rgb(129, 189, 229) 15px 30px), repeating-linear-gradient(135deg, rgb(129, 189, 229) 0px 11px, transparent 13px, rgb(129, 189, 229) 15px 30px), repeating-linear-gradient(20deg, rgb(129, 189, 229) 0px 24px, lightblue 27px, white 36px, #ffff88 45px, rgb(129, 189, 229) 48px);
+  -webkit-animation: sea-glow 40s linear infinite;
+          animation: sea-glow 40s linear infinite;
+}
+
 .c-sun-light {
   top: 40%;
   left: -45%;
   position: absolute;
   transform-origin: center;
   rotate: 301deg;
-  opacity: 1;
+}
+.c-sun-light li {
+  opacity: 0;
 }
 
 .c-chochin {

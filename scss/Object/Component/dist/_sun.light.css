@@ -4,7 +4,5 @@
   position: absolute;
   transform-origin: center;
   rotate: 301deg;
-  li {
-    opacity: 0;
-  }
+  opacity: 1;
 }

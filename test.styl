@@ -6,19 +6,27 @@
   //1度を形成する角錐のサイズ 上105vw 横10vh 下0
   border-width 200vw 10vh 0
   //border-color #f00 transparent transparent 
-  for i in (1..100)
+  for i in (1..25)
     &:nth-of-type({i})
       transform rotate(i * 1.15 deg) translate3d(0, 0, 0)
       //グラデーション
-      border-image linear-gradient(to bottom, hsla( - 100, 100%, 50%, 1),hsla( - 100, 100%, 50%, .5),hsla( - 100, 100%, 50%, .1),hsla( - 100, 100%, 50%, 0)) 100% / 80vw 5.5vh 0  
-      animation sun-beam 12.5s i * 0.2083333333s + 12.5s infinite alternate
+      border-image linear-gradient(to bottom, hsla(i - 100, 100%, 50%, 0),hsla(i - 100, 100%, 50%, .3),hsla(i - 100, 100%, 50%, .2),hsla(i - 100, 100%, 50%, 0)) 100% / 80vw 5.5vh 0 
+      animation sun-beam 25s i s  infinite 
+ 
+ 
 
 @keyframes sun-beam {
-  0% {
+  72% {
     opacity: 0;
 	}
-	50% {
+	86% {
     opacity: 1;
+	}
+	98% {
+    opacity: 0.5;
+	}
+	90% {
+    opacity: 0;
 	}
 	100% {
     opacity: 0;

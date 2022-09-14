@@ -1,0 +1,6 @@
+.c-sea-glow {
+  height: 300px;
+  position: absolute;
+  background-image: repeating-linear-gradient(45deg, #81bde5 0px 11px, transparent 13px, #81bde5 15px 30px), repeating-linear-gradient(135deg, #81bde5 0px 11px, transparent 13px, #81bde5 15px 30px), repeating-linear-gradient(20deg, #81bde5 0px 24px, lightblue 27px, white 36px, #ffff88 45px, #81bde5 48px);
+  animation: sea-glow 40s linear infinite;
+}

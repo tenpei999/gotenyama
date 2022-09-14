@@ -4,5 +4,7 @@
   position: absolute;
   transform-origin: center;
   rotate: 301deg;
-  opacity: 1;
+}
+.c-sun-light li {
+  opacity: 0;
 }
