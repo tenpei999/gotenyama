@@ -2,11 +2,11 @@
   position: absolute;
   top: 10%;
   left: 85%;
-  width: 20px;
-  height: 20px;
+  width: 2%;
+  height: 2.8%;
   border-radius: 50%;
   z-index: 700;
-  box-shadow: -3px 0px 0px 2px #fff;
+  box-shadow: -0.3vw 0vw 0vw 0.2vw #fff;
   transform: rotate(-24deg);
   animation: moon-light 25s 0s infinite;
 }
