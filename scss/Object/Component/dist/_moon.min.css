@@ -1,0 +1,1 @@
+.c-moon{position:absolute;top:10%;left:85%;width:20px;height:20px;border-radius:50%;z-index:700;box-shadow:-3px 0 0 2px #fff;transform:rotate(-24deg);animation:moon-light 25s 0s infinite}@keyframes moon-light{10%,100%{opacity:1}25%,75%{opacity:.5}50%{opacity:0}}

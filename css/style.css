@@ -564,6 +564,55 @@ input, button, textarea, select {
   z-index: 500;
 }
 
+.c-moon {
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 700;
+  box-shadow: -3px 0px 0px 2px #fff;
+  transform: rotate(-24deg);
+  -webkit-animation: moon-light 25s 0s infinite;
+          animation: moon-light 25s 0s infinite;
+}
+
+@-webkit-keyframes moon-light {
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moon-light {
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .p-animation-image {
   position: relative;
   width: 100vw;
